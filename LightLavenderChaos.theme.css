@@ -1,8 +1,8 @@
 /**
  * @name LightLavenderChaos
  * @author Japanese Schoolgirl (Lisa)
- * @version 0.0.1
- * @description This theme is made for me and a few of my friends, so it is unlikely that you will like it. I'm uploading it here for easier it's updates. Almost all of the theme is designed around of lavender tones, oriented towards the Discord's light theme.
+ * @version 0.0.2
+ * @description This theme is made for me and a few of my friends, so it is unlikely that you will like it. I'm uploading it here for the ease of its updating. Almost entire theme is designed around lavender tones and oriented towards the Discord's light theme.
  * @authorLink https://github.com/Japanese-Schoolgirl
  * @invite nZMbKkw
  * @donate https://donate.qiwi.com/payin/Schoolgirl
@@ -67,14 +67,12 @@
 	--deprecated-text-input-prefix: #b9bbbe;
 }
 
-/* Если включить: меняет цвет скролла и его фона */
+/* Если включить: убирает фоновую картинку и меняет цвет скролла */
 /*
 .theme-light, .theme-dark {
+	--pretty-background-img: none;
 	--scrollbar-auto-thumb: gray;
 	--scrollbar-auto-track: rgba(220, 220, 220, 0.5);;
-}
-::-webkit-scrollbar {
-	background-color: rgba(220, 220, 220, 0.5);
 }
 */
 
