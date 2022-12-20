@@ -11,7 +11,7 @@
  * @updateUrl https://raw.githubusercontent.com/Japanese-Schoolgirl/DiscordTheme-LightLavenderChaos/main/LightLavenderChaos.theme.css
  */
 
-@import("https://japanese-schoolgirl.github.io/DiscordTheme-LightLavenderChaos/CoreCSS/theme_for_import.css")
+@import url("https://japanese-schoolgirl.github.io/DiscordTheme-LightLavenderChaos/CoreCSS/theme_for_import.css")
 
 /*/// Settings ///*/
 /* Если включить: убирает фоновую картинку и меняет цвет скролла */
