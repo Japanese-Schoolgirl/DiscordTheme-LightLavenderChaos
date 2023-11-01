@@ -64,77 +64,69 @@
 */
 
 /* Панель людей справа */
-div[class*="members"], div[class*="members"]>div {
+div[class*="members_"], div[class*="members_"]>div {
 	background-color: var(--background-secondary-members);
 }
 
-div[class*="member"] {
-	background: rgba(100, 0, 80, 0.02);
-}
-
-div[class*="app"] div[class*="base"] div[class*="sidebar"] {
-	background: none;
-}
-
 /* Панель с эмодзи (в том числе всплывающая) */
-div[class*="drawerSizingWrapper"], div[class*="animatorLeft"] {
+div[class*="drawerSizingWrapper_"], div[class*="animatorLeft_"] {
 	background-color: rgba(230, 210, 230, 1);
 }
 
 /* Панель слева с строчками в меню настроек */
-div[class*="sidebarRegion"], div[class*="sidebarRegionScroller"] {
+div[class*="sidebarRegion_"], div[class*="sidebarRegionScroller_"] {
 	background: rgba(236, 201, 232, 0.2);
 }
 
 /* Оформление надписи с "отвечает на..." */
-div[class*="replyBar"] {
+div[class*="replyBar_"] {
 	background: rgba(236, 201, 232, 1);
 }
 
 /* Задний фон текста оформленного как кода */
-div[class*="markup"] code {
+div[class*="markup_"] code {
 	background: rgba(242, 243, 245, 1);
 }
 
 /* Панель групп и названия Дискорда */
-div[class*="wrapper"][class*="guilds"], nav[class*="wrapper"][class*="guilds"], div[class*="guilds-wrapper"], div[class*="typeWindows"], div[class*="scroller"][class*="scroller-2T"], div[class*="guilds"][class*="friendsOnline"] {
+div[class*="wrapper_"][class*="guilds_"], nav[class*="wrapper_"][class*="guilds_"], div[class*="guilds-wrapper"], div[class*="typeWindows_"], div[class*="scroller_"][class*="scroller-2T"], div[class*="guilds_"][class*="friendsOnline_"] {
 	background-image: var(--pretty-gradient-blur), var(--pretty-background-img);
 }
 
 /* Правая панель с серверами */
-nav[class*="wrapper"][class*="guilds"] div[class*="scroller"] {
+nav[class*="wrapper_"][class*="guilds_"] div[class*="scroller_"] {
 	background-color: transparent;
 }
 
 /* Оповещение о новых сообщениях на серверах и выделенном сервере */
-div[class*="pill"][class*="wrapper"] span[class*="item"] {
+div[class*="pill_"][class*="wrapper_"] span[class*="item_"] {
 	background-color: var(--interactive-active);
 }
 
 /* Размер окна с превью демонстрации */
-div[class*="pictureInPictureVideo"] {
+div[class*="pictureInPictureVideo_"] {
 	height: 360px;
 	width: 640px;
 }
 
 /* Фон превью ссылок */
-div[class*="embedFull"] {
+div[class*="embedFull_"] {
 	background: rgba(242, 243, 245, 0.9);
 }
 
-/* Задний фон реакций, исключая панель под сообщениями */
-div[class*="reaction"]:not(div[class*="reactions"]) {
+/* Задний фон реакций */
+div[class*="reaction_"] {
 	background: var(--background-modifier-selected); !important;
 }
 
 /* Задний фон отмеченных реакций */
-div[class*="reaction"][class*="reactionMe"] {
+div[class*="reaction_"][class*="reactionMe_"] {
 	background-color: var(--brand-experiment) !important;
 	border-color: rgba(200, 50, 150, 0.5) /* var(--brand-experiment) */ !important;
 }
 
 /* Фон заметок */
-div[class*="note"] textarea:focus {
+div[class*="note_"] textarea:focus {
 	background-color: var(--channeltextarea-background);
 }
 
@@ -143,18 +135,18 @@ div[id*="popout_"] {
 	background-color: var(--background-secondary-members);
 }
 
-div[class*="stickyHeader"] {
+div[class*="stickyHeader_"] {
 	display: none;
 }
 
 /* Отзеркаливает отображение веб камеры в окне звонка */
-div[class*="media-engine-video video"][class*="mirror"] {
+div[class*="media-engine-video video_"][class*="mirror_"] {
 	transform: scaleX(1);
 }
 
 /* Если включить: скрывает заблокированных пользователей */
 /*
-	div[class^="messageGroupBlocked"], div[class*=" messageGroupBlocked"] {
+	div[class^="messageGroupBlocked_"], div[class*=" messageGroupBlocked_"] {
 	display: none;
 }
 */
