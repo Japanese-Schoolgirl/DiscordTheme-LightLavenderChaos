@@ -122,8 +122,8 @@ div[class*="embedFull"] {
 	background: rgba(242, 243, 245, 0.9);
 }
 
-/* Задний фон реакций */
-div[class*="reaction"] {
+/* Задний фон реакций, исключая панель под сообщениями */
+div[class*="reaction"]:not(div[class*="reactions"]) {
 	background: var(--background-modifier-selected); !important;
 }
 
