@@ -68,6 +68,13 @@ div[class*="members_"], div[class*="members_"]>div {
 	background-color: var(--background-secondary-members);
 }
 
+div[class*="member"] {
+	background: rgba(100, 0, 80, 0.02);
+}
+div[class*="app"] div[class*="base"] div[class*="sidebar"] {
+	background: none;
+}
+
 /* Панель с эмодзи (в том числе всплывающая) */
 div[class*="drawerSizingWrapper_"], div[class*="animatorLeft_"] {
 	background-color: rgba(230, 210, 230, 1);
