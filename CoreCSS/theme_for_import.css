@@ -158,7 +158,7 @@ div[class*="media-engine-video video_"][class*="mirror_"] {
 
 /* Если включить: скрывает заблокированных пользователей */
 /*
-	div[class^="messageGroupBlocked_"], div[class*=" messageGroupBlocked_"] {
+div[class^="messageGroupBlocked_"], div[class*=" messageGroupBlocked_"] {
 	display: none;
 }
 */
