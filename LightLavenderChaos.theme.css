@@ -25,7 +25,7 @@
 
 /* Если включить: скрывает заблокированных пользователей */
 /*
-	div[class^="messageGroupBlocked"], div[class*=" messageGroupBlocked"] {
+div[class^="messageGroupBlocked"], div[class*=" messageGroupBlocked"] {
 	display: none;
 }
 */
