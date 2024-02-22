@@ -142,6 +142,11 @@ div[id*="popout_"] {
 	background-color: var(--background-secondary-members);
 }
 
+/* Окно поиска переписки групп и друзей */
+div[class^="quickswitcher_"] {
+	background-color: var(--background-primary);
+}
+
 div[class*="stickyHeader_"] {
 	display: none;
 }
