@@ -1,4 +1,10 @@
-.theme-light, .theme-dark {
+/* 
+ * This theme is made for me and a few of my friends, so it is unlikely that you will like it.
+ * I'm uploading it here for the ease of its updating. Almost entire theme is designed around lavender tones and oriented towards the Discord's light theme.
+ * This script is written very poorly and lazily, I don't recommend using it as a base for anything :I
+ */
+
+body, .theme-light, .theme-dark {
 	--pretty-background-img: url("https://i.imgur.com/QCatrz5.jpg");
 	--pretty-gradient-blur: linear-gradient(
 		to bottom,
@@ -15,14 +21,19 @@
 
 	--header-primary: rgba(186, 127, 171, .8); /* Цвет пинга, селектора и никнейма снизу */
 	--header-secondary--header-secondary: rgba(132, 120, 125, .5); /* Цвет айдишника и ещё чего-то */
-	--text-default: rgb(116, 127, 141); /* Цвет текста */
 	--text-normal: rgb(116, 127, 141); /* Цвет текста */
 	--text-muted: rgba(172, 150, 165, .6); /* Цвет замученного текста */
 	--text-link: rgba(230, 10, 230, 1); /* Цвет ссылок */ /* Старый: rgba(255, 117, 206, 1); */
 	--channels-default: rgba(145, 125, 132, 1); /* Цвет названий каналов */
 	--interactive-normal: rgba(132, 120, 125, 0.8); /* Цвет некоторых иконок и текста в меню настроек */
+		--text-tertiary: var(--interactive-normal);
 	--interactive-hover: rgba(225, 165, 215, 0.9); /* Цвет названий каналов и иконок над которыми курсор */
+		--text-secondary: var(--interactive-hover);
+		--button-secondary-text: var(--interactive-hover);
 	--interactive-active: rgba(255, 163, 218, 0.9); /* Цвет названия активного канала */
+		--text-default: var(--interactive-active);
+		--text-primary: var(--interactive-active);
+		--icon-primary: var(--interactive-active);
 	--interactive-muted: rgba(167, 123, 141, 0.5); /* Цвет названий замученный каналов */
 	--brand-experiment: rgba(200, 140, 190, 0.5); /* Цвет нажатой реакции под сообщением */
 	--background-primary: #fff; /* Цвет чата */
@@ -43,6 +54,8 @@
 	--channeltextarea-background: #ebedef; /* Панель набора сообщения */
 	--activity-card-background: #fff;
 	--deprecated-panel-background: rgba(45, 20, 42, 1); /* Панель звонка */
+		--background-base-low: var(--deprecated-panel-background);
+		--background-base-lowest: var(--deprecated-panel-background);
 	--deprecated-card-bg: #f8f9f9;
 	--deprecated-card-editable-bg: rgba(246,246,247,0.6);
 	--deprecated-store-bg: #f8f9f9;
@@ -75,17 +88,12 @@ div[class*="member"] {
 
 div[class*="app"] div[class*="base"] div[class*="sidebar"] {
 	background: none;
-	background-color: rgba(45, 20, 42, 1);
+	background-color: var(--deprecated-panel-background);
 }
 
 /* Панель людей слева */
 div[class*="sidebar_"], div[class*="scroller__"][class*="scrollerBase__"] {
 	background-color: rgba(120, 40, 110, 1);
-}
-
-/* Левая панель статуса Голосовой связи и Статуса */
-section[class*="panels_"] {
-	background-color: rgba(45, 20, 42, 1);
 }
 
 /* Панель с эмодзи (в том числе всплывающая) */
