@@ -117,7 +117,7 @@ div[class*="markup_"] code {
 }
 
 /* Панель групп и названия Дискорда */
-div[class*="wrapper_"][class*="guilds_"], nav[class*="wrapper_"][class*="guilds_"], div[class*="guilds-wrapper"], div[class*="typeWindows_"], div[class*="scroller_"][class*="scroller-2T"], div[class*="guilds_"][class*="friendsOnline_"] {
+div[data-windows="true"] [class*="title_"], div[class*="wrapper_"][class*="guilds_"], nav[class*="wrapper_"][class*="guilds_"], div[class*="guilds-wrapper"], div[class*="typeWindows_"], div[class*="scroller_"][class*="scroller-2T"], div[class*="guilds_"][class*="friendsOnline_"] {
 	background-image: var(--pretty-gradient-blur), var(--pretty-background-img);
 }
 
@@ -133,8 +133,8 @@ div[class*="pill_"][class*="wrapper_"] span[class*="item_"] {
 
 /* Размер окна с превью демонстрации */
 div[class*="pictureInPictureVideo_"] {
-	height: 360px;
-	width: 640px;
+	height: 240px; /* По умолчанию: 180px  */
+	width: 428px; /* По умолчанию: 320px */
 }
 
 /* Фон превью ссылок */
