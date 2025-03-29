@@ -30,6 +30,7 @@ body, .theme-light, .theme-dark {
 	--interactive-hover: rgba(225, 165, 215, 0.9); /* Цвет названий каналов и иконок над которыми курсор */
 		--text-secondary: var(--interactive-hover);
 		--button-secondary-text: var(--interactive-hover);
+		--embed-title: var(--interactive-hover);
 	--interactive-active: rgba(255, 163, 218, 0.9); /* Цвет названия активного канала */
 		--text-default: var(--interactive-active);
 		--text-primary: var(--interactive-active);
