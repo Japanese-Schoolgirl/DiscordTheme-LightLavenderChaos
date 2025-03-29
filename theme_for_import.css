@@ -1,0 +1,191 @@
+/* 
+ * This theme is made for me and a few of my friends, so it is unlikely that you will like it.
+ * I'm uploading it here for the ease of its updating. Almost entire theme is designed around lavender tones and oriented towards the Discord's light theme.
+ * This script is written very poorly and lazily, I don't recommend using it as a base for anything :I
+ */
+
+body, .theme-light, .theme-dark {
+	--pretty-background-img: url("https://i.imgur.com/QCatrz5.jpg");
+	--pretty-gradient-blur: linear-gradient(
+		to bottom,
+		rgba(255, 50, 150, 0.1),
+		rgba(255, 0, 255, 0.1)
+	);
+	--pretty-gradient-secondary: linear-gradient(
+		to bottom,
+		rgba(245, 60, 245, 0.4),
+		rgba(245, 60, 245, 0.1),
+		rgba(185, 60, 160, 0.2),
+		rgba(165, 70, 195, 0.4)
+	);
+
+	--header-primary: rgba(186, 127, 171, .8); /* Цвет пинга, селектора и никнейма снизу */
+	--header-secondary--header-secondary: rgba(132, 120, 125, .5); /* Цвет айдишника и ещё чего-то */
+	--text-normal: rgb(116, 127, 141); /* Цвет текста */
+	--text-muted: rgba(172, 150, 165, .6); /* Цвет замученного текста */
+	--text-link: rgba(230, 10, 230, 1); /* Цвет ссылок */ /* Старый: rgba(255, 117, 206, 1); */
+	--channels-default: rgba(145, 125, 132, 1); /* Цвет названий каналов */
+	--interactive-normal: rgba(132, 120, 125, 0.8); /* Цвет некоторых иконок и текста в меню настроек */
+		--text-tertiary: var(--interactive-normal);
+	--interactive-hover: rgba(225, 165, 215, 0.9); /* Цвет названий каналов и иконок над которыми курсор */
+		--text-secondary: var(--interactive-hover);
+		--button-secondary-text: var(--interactive-hover);
+	--interactive-active: rgba(255, 163, 218, 0.9); /* Цвет названия активного канала */
+		--text-default: var(--interactive-active);
+		--text-primary: var(--interactive-active);
+		--icon-primary: var(--interactive-active);
+	--interactive-muted: rgba(167, 123, 141, 0.5); /* Цвет названий замученный каналов */
+	--brand-experiment: rgba(200, 140, 190, 0.5); /* Цвет нажатой реакции под сообщением */
+	--background-primary: #fff; /* Цвет чата */
+	--background-secondary: var(--pretty-gradient-secondary); /* Панель друзей, каналов и людей справа */
+	--background-secondary-members: rgba(243, 243, 243, 1); /* Кастомная переменная для панели людей справа */
+	--background-secondary-alt: rgba(45, 20, 42, 1); /* Панель состояния звонка */
+	--background-tertiary: rgba(55, 30, 52, 1); /* Модификатор цвета для панели групп и названия Дискорда */
+	--background-accent: rgba(132, 120, 125, .5); /* Цвет некоторых иконок */
+	--background-floating: rgba(255, 255, 255, 1); /* Цвет контекстового меню */
+	--background-modifier-hover: rgba(225, 65, 245, 0.1); /* Цвет при наведении */
+	--background-modifier-active: rgba(225, 65, 245, 0.2); /* Цвет по нажатию */
+	--background-modifier-selected: rgba(225, 65, 245, 0.2); /* Цвет выделения после нажатия */
+	--background-modifier-accent: rgba(6,6,7,0.08);
+	--elevation-low: 0 1px 0 rgba(6,6,7,0.1),0 1.5px 0 rgba(6,6,7,0.025),0 2px 0 rgba(6,6,7,0.025);
+	--elevation-high: 0 8px 16px rgba(0,0,0,0.16);
+	--logo-primary: #7289da;
+	--guild-header-text-shadow: 0 1px 1px hsla(0,0%,100%,0.4);
+	--channeltextarea-background: #ebedef; /* Панель набора сообщения */
+	--activity-card-background: #fff;
+	--deprecated-panel-background: rgba(45, 20, 42, 1); /* Левая панель звонка и статуса */
+		--background-base-low: var(--deprecated-panel-background);
+		--background-base-lowest: var(--deprecated-panel-background);
+		--background-surface-high: var(--deprecated-panel-background);
+	--deprecated-card-bg: #f8f9f9;
+	--deprecated-card-editable-bg: rgba(246,246,247,0.6);
+	--deprecated-store-bg: #f8f9f9;
+	--deprecated-quickswitcher-input-background: #fff;
+	--deprecated-quickswitcher-input-placeholder: rgba(79,84,92,0.3);
+	--deprecated-text-input-bg: rgba(79,84,92,0.02);
+	--deprecated-text-input-border: rgba(79,84,92,0.3);
+	--deprecated-text-input-border-hover: #b9bbbe;
+	--deprecated-text-input-border-disabled: #dcddde;
+	--deprecated-text-input-prefix: #b9bbbe;
+}
+
+/* Если включить: убирает фоновую картинку и меняет цвет скролла */
+/*
+.theme-light, .theme-dark {
+	--pretty-background-img: none;
+	--scrollbar-auto-thumb: gray;
+	--scrollbar-auto-track: rgba(220, 220, 220, 0.5);;
+}
+*/
+
+/* Панель людей справа */
+div[class*="members_"], div[class*="members_"]>div {
+	background-color: var(--background-secondary-members);
+}
+
+div[class*="member"] {
+	background: rgba(100, 0, 80, 0.02);
+}
+
+div[class*="app"] div[class*="base"] div[class*="sidebar"] {
+	background: none;
+	background-color: var(--deprecated-panel-background);
+}
+
+/* Панель людей слева */
+div[class*="sidebar_"], div[class*="scroller__"][class*="scrollerBase__"] {
+	background-color: rgba(120, 40, 110, 1);
+}
+
+/* Панель с эмодзи (в том числе всплывающая) */
+div[class*="drawerSizingWrapper_"], div[class*="animatorLeft_"] {
+	background-color: rgba(230, 210, 230, 1);
+}
+
+/* Панель слева с строчками в меню настроек */
+div[class*="sidebarRegion_"], div[class*="sidebarRegionScroller_"] {
+	background: rgba(236, 201, 232, 0.2);
+}
+
+/* Оформление надписи с "отвечает на..." */
+div[class*="replyBar_"] {
+	background: rgba(236, 201, 232, 1);
+}
+
+/* Задний фон текста оформленного как кода */
+div[class*="markup_"] code {
+	background: rgba(242, 243, 245, 1);
+}
+
+/* Панель групп и названия Дискорда */
+div[data-windows="true"] [class*="title_"], div[class*="wrapper_"][class*="guilds_"], nav[class*="wrapper_"][class*="guilds_"], div[class*="guilds-wrapper"], div[class*="typeWindows_"], div[class*="scroller_"][class*="scroller-2T"], div[class*="guilds_"][class*="friendsOnline_"] {
+	background-image: var(--pretty-gradient-blur), var(--pretty-background-img);
+}
+
+/* Правая панель с серверами */
+nav[class*="wrapper_"][class*="guilds_"] div[class*="scroller_"] {
+	background-color: transparent;
+}
+
+/* Оповещение о новых сообщениях на серверах и выделенном сервере */
+div[class*="pill_"][class*="wrapper_"] span[class*="item_"] {
+	background-color: var(--interactive-active);
+}
+
+/* Размер окна с превью демонстрации */
+div[class*="pictureInPictureVideo_"] {
+	height: 240px; /* По умолчанию: 180px  */
+	width: 428px; /* По умолчанию: 320px */
+}
+
+/* Фон превью ссылок */
+div[class*="embedFull_"] {
+	background: rgba(242, 243, 245, 0.9);
+}
+
+/* Задний фон реакций */
+div[class*="reaction_"] {
+	background: var(--background-modifier-selected); !important;
+}
+
+/* Задний фон отмеченных реакций */
+div[class*="reaction_"][class*="reactionMe_"] {
+	background-color: var(--brand-experiment) !important;
+	border-color: rgba(200, 50, 150, 0.5) /* var(--brand-experiment) */ !important;
+}
+
+/* Фон заметок */
+div[class*="note_"] textarea:focus {
+	background-color: var(--channeltextarea-background);
+}
+
+/* Фон меню у ботов и в настройках */
+div[id*="popout_"] {
+	background-color: var(--background-secondary-members);
+}
+
+/* Окно поиска переписки групп и друзей */
+div[class^="quickswitcher_"] {
+	background-color: var(--background-primary);
+}
+
+div[class*="stickyHeader_"] {
+	display: none;
+}
+
+/* Отзеркаливает отображение веб камеры в окне звонка */
+div[class*="media-engine-video video_"][class*="mirror_"] {
+	transform: scaleX(1);
+}
+
+/* Если включить: скрывает заблокированных пользователей */
+/*
+div[class^="messageGroupBlocked_"], div[class*=" messageGroupBlocked_"] {
+	display: none;
+}
+*/
+
+
+/* Original OLD Discord CSS
+https://ptb.discordapp.com/assets/0.0b1a3876bb94f9901b89.css
+*/
