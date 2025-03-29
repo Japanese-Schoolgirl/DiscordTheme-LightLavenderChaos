@@ -53,9 +53,10 @@ body, .theme-light, .theme-dark {
 	--guild-header-text-shadow: 0 1px 1px hsla(0,0%,100%,0.4);
 	--channeltextarea-background: #ebedef; /* Панель набора сообщения */
 	--activity-card-background: #fff;
-	--deprecated-panel-background: rgba(45, 20, 42, 1); /* Панель звонка */
+	--deprecated-panel-background: rgba(45, 20, 42, 1); /* Левая панель звонка и статуса */
 		--background-base-low: var(--deprecated-panel-background);
 		--background-base-lowest: var(--deprecated-panel-background);
+		--background-surface-high: var(--deprecated-panel-background);
 	--deprecated-card-bg: #f8f9f9;
 	--deprecated-card-editable-bg: rgba(246,246,247,0.6);
 	--deprecated-store-bg: #f8f9f9;
