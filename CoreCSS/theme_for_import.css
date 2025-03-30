@@ -79,6 +79,11 @@ body, .theme-light, .theme-dark {
 }
 */
 
+/* Панель с участниками и кнопками звонка в ЛС */
+div[class*="callContainer_"] [class*="root_"] [class*="voiceCallWrapper_"] {
+	background: var(--pretty-background-img);
+}
+
 /* Панель людей справа */
 div[class*="members_"], div[class*="members_"]>div {
 	background-color: var(--background-secondary-members);
