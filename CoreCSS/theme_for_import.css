@@ -79,6 +79,11 @@ body, .theme-light, .theme-dark {
 }
 */
 
+/* Временный фикс визуального глитча в верхнем левом угду (белого "осколка" между элементами) */
+div[class*="container_c48ade"] {
+	background: var(--pretty-background-img);
+}
+
 /* Панель с участниками и кнопками звонка в ЛС */
 div[class*="callContainer_"] [class*="root_"] [class*="voiceCallWrapper_"] {
 	background: var(--pretty-background-img);
