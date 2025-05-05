@@ -4,7 +4,7 @@
  * This script is written very poorly and lazily, I don't recommend using it as a base for anything :I
  */
 
-body, .theme-light, .theme-dark {
+*, .theme-light, .theme-dark {
 	--pretty-background-img: url("https://i.imgur.com/QCatrz5.jpg");
 	--pretty-gradient-blur: linear-gradient(
 		to bottom,
@@ -72,17 +72,12 @@ body, .theme-light, .theme-dark {
 
 /* Если включить: убирает фоновую картинку и меняет цвет скролла */
 /*
-.theme-light, .theme-dark {
+*, .theme-light, .theme-dark {
 	--pretty-background-img: none;
 	--scrollbar-auto-thumb: gray;
 	--scrollbar-auto-track: rgba(220, 220, 220, 0.5);;
 }
 */
-
-/* Временный фикс визуального глитча в верхнем левом угду (белого "осколка" между элементами) */
-div[class*="container_c48ade"] {
-	background: var(--pretty-background-img);
-}
 
 /* Панель с участниками и кнопками звонка в ЛС */
 div[class*="callContainer_"] [class*="root_"] [class*="voiceCallWrapper_"] {
