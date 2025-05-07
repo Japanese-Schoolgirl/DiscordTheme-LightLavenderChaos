@@ -16,7 +16,7 @@
 /*/// Settings ///*/
 /* Если включить: убирает фоновую картинку и меняет цвет скролла */
 /*
-.theme-light, .theme-dark {
+*, .theme-light, .theme-dark {
 	--pretty-background-img: none;
 	--scrollbar-auto-thumb: gray;
 	--scrollbar-auto-track: rgba(220, 220, 220, 0.5);;
