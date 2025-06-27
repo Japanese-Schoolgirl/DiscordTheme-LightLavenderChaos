@@ -32,7 +32,7 @@
 		--button-secondary-text: var(--interactive-hover);
 		--embed-title: var(--interactive-hover);
 	--interactive-active: rgba(255, 163, 218, 0.9); /* Цвет названия активного канала */
-		--text-default: var(--interactive-active);
+		--text-default: var(--text-normal);
 		--text-primary: var(--interactive-active);
 		--icon-primary: var(--interactive-active);
 	--interactive-muted: rgba(167, 123, 141, 0.5); /* Цвет названий замученный каналов */
@@ -78,6 +78,11 @@
 	--scrollbar-auto-track: rgba(220, 220, 220, 0.5);;
 }
 */
+
+/* Меню настроек BetterDiscord */
+.bd-addon-list .bd-description {
+	color: var(--text-normal);
+}
 
 /* Панель с участниками и кнопками звонка в ЛС */
 div[class*="callContainer_"] [class*="root_"] [class*="voiceCallWrapper_"] {
