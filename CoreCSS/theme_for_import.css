@@ -144,10 +144,12 @@ div[class*="pill_"][class*="wrapper_"] span[class*="item_"] {
 }
 
 /* Размер окна с превью демонстрации */
+/*
 div[class*="pictureInPictureVideo_"] {
-	height: 240px; /* По умолчанию: 180px  */
-	width: 428px; /* По умолчанию: 320px */
+	height: 240px;
+	width: 428px;
 }
+*/
 
 /* Фон превью ссылок */
 div[class*="embedFull_"] {
