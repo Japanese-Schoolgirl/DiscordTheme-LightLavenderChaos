@@ -29,3 +29,15 @@ div[class^="messageGroupBlocked"], div[class*=" messageGroupBlocked"] {
 	display: none;
 }
 */
+
+/* 
+ * This theme is made for me and a few of my friends, so it is unlikely that you will like it.
+ * I'm uploading it here for the ease of its updating. Almost entire theme is designed around lavender tones and oriented towards the Discord's light theme.
+ * This script is written very poorly and lazily, I don't recommend using it as a base for anything :I
+ */
+
+/* Размер окна с превью демонстрации */
+div[class*="pictureInPictureVideo_"][class*="borderRadius_"] {
+	height: 700px; /* По умолчанию: 180px  */
+	width: 800px; /* По умолчанию: 320px */
+}
