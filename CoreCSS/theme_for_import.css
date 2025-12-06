@@ -26,6 +26,7 @@
 	--text-link: rgba(230, 10, 230, 1); /* Цвет ссылок */ /* Старый: rgba(255, 117, 206, 1); */
 	--channels-default: rgba(145, 125, 132, 1); /* Цвет названий каналов */
 	--interactive-normal: rgba(132, 120, 125, 0.8); /* Цвет некоторых иконок и текста в меню настроек */
+		--text-strong: var(--interactive-normal); /* Цвет текста */
 		--text-tertiary: var(--interactive-normal);
 	--interactive-hover: rgba(225, 165, 215, 0.9); /* Цвет названий каналов и иконок над которыми курсор */
 		--text-secondary: var(--interactive-hover);
