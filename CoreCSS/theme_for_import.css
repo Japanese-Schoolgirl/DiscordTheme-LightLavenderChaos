@@ -101,6 +101,11 @@ div[class*="clickTrapContainer_"] > * {
 	background: var(--pretty-gradient-tooltip);
 }
 
+/* Исправление бага с тултипом у панели реакций */
+div[class*="clickTrapContainer_"] > [class*="expressionPickerPositionLayer"] {
+	background: none;
+}
+
 /* Панель с участниками и кнопками звонка в ЛС */
 div[class*="callContainer_"] [class*="root_"] [class*="voiceCallWrapper_"] {
 	background: var(--pretty-background-img);
