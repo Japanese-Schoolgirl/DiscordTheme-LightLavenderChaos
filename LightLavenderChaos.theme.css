@@ -23,6 +23,13 @@
 }
 */
 
+/* Если включить: скрывает навязчивое окно ToS */
+/*
+[role="dialog"]:has(a[href="//discord.com/safety/important-policy-updates"]) {
+  display: none !important;
+}
+*/
+
 /* Если включить: скрывает заблокированных пользователей */
 /*
 div[class^="messageGroupBlocked"], div[class*=" messageGroupBlocked"] {
