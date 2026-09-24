@@ -20,9 +20,9 @@
 	);
 	--pretty-gradient-tooltip: linear-gradient(
 		to bottom,
-		rgba(215, 120, 225, 0.8),
+		rgba(215, 210, 225, 1),
 		rgba(245, 220, 240, 1),
-		rgba(215, 120, 225, 0.8)
+		rgba(215, 210, 225, 1)
 	);
 
 	--header-primary: rgba(186, 127, 171, 0.8); /* Цвет пинга, селектора и никнейма снизу */
@@ -52,8 +52,8 @@
 	--brand-experiment: rgba(200, 140, 190, 0.5); /* Цвет нажатой реакции под сообщением */
 	--background-primary: #fff; /* Цвет чата */
 	--background-base-lowest: rgba(85, 30, 82, 1); /* Левая панель звонка и статуса */
+	--background-surface-high: var(--pretty-gradient-tooltip); /* Некоторые тултипы и доп. панель состояния звонка */
 	--background-secondary: var(--pretty-gradient-secondary); /* Левая панель друзей, каналов и людей справа */
-		--background-surface-high: var(--pretty-gradient-secondary);
 	--background-secondary-members: rgba(243, 243, 243, 1); /* Кастомная переменная для панели людей справа */
 	--background-secondary-alt: rgba(45, 20, 42, 1); /* Панель состояния звонка */
 		--background-base-low: var(--background-secondary-alt);
@@ -98,7 +98,7 @@
 
 /* Небольшие тултипы, всплывающие при наведении */
 div[class*="clickTrapContainer_"] > * {
-	background: var(--pretty-gradient-tooltip);
+	background: var(--background-primary);
 }
 
 /* Исправление бага с тултипом у панели реакций */
